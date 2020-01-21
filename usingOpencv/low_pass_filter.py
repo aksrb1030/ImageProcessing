@@ -13,7 +13,7 @@ def show_pic(img):
     
 
 #   open a new img
-img = cv2.imread("data/vegas_barneys.png")
+img = cv2.imread("../data/vegas_barneys.png")
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 kernel = np.ones(shape = (5,5), dtype=np.float32) / 25

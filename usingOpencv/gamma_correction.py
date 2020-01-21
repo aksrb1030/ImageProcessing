@@ -12,7 +12,7 @@ def show_pic(img):
     plt.show()
 
 # normalization
-img = cv2.imread("data/vegas_barneys.png").astype(np.float32) / 255
+img = cv2.imread("../data/vegas_barneys.png").astype(np.float32) / 255
 
 # X**0.25
 gamma = 3

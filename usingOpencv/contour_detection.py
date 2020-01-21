@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #   두번째 인자로 0을 건네주면 gray sacle로 열겠다는 뜻
-img = cv2.imread("data/contour_exercise.png", 0)
+img = cv2.imread("../data/contour_exercise.png", 0)
 
 # CCOMP는 complete라고 external, internal contour를 모두 변환해달라는 의미
 # SIMPLE은 주로 넣는 디폴트 값이며 그리기 위한 필요한 점들에 관한 정보만 변환시켜 달라는 뜻

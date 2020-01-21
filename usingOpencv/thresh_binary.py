@@ -9,7 +9,7 @@ def show_pic(img):
     plt.show()
 
 #   open a new img
-img = cv2.imread("data/dog_1.png",0)
+img = cv2.imread("../data/dog_1.png",0)
 print (img[200:500])
 # 100 보다 작으면 0으로, 그렇지 않다면 255로 바꿔줌
 ret, thresh = cv2.threshold(img, 100, 255, cv2.THRESH_BINARY)

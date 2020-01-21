@@ -8,7 +8,7 @@ def show_pic(img):
     ax.imshow(img, cmap = 'gray') 
     plt.show()
 
-img = cv2.imread('data/brick_with_vace.png')
+img = cv2.imread('../data/brick_with_vace.png')
 img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 sobelx =  cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize = 5)

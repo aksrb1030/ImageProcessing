@@ -15,7 +15,7 @@ def show_pic(img):
     plt.show()
 
 #   open a new img
-img = cv2.imread("data/crossword.jpg",0)
+img = cv2.imread("../data/crossword.jpg",0)
 print (img[200:500])
 # 100 보다 작으면 0으로, 그렇지 않다면 255로 바꿔줌
 ad_thres = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 8)

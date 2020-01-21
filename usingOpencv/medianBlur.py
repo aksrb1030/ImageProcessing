@@ -8,8 +8,11 @@ def show_pic(img):
     ax.imshow(img, cmap = 'gray')
     plt.show()
 
+    
+
 #   open a new img
-img = cv2.imread("data/crossword.jpg",0)
-# 100 보다 작으면 0으로, 그렇지 않다면 255로 바꿔줌
-ret2, thresh2 = cv2.threshold(img, 180, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
-show_pic(thresh2)
+img = cv2.imread("../data/dog_1.png")
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+
+no_noise_img = cv2.medianBlur(img,5)
+show_pic(no_noise_img)
