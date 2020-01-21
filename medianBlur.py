@@ -12,7 +12,7 @@ def show_pic(img):
 
 #   open a new img
 img = cv2.imread("data/dog_1.png")
-img = cv2.cvtColor(img, cv2.OLOR_BGR2RGB)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 no_noise_img = cv2.medianBlur(img,5)
 show_pic(no_noise_img)
